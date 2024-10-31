@@ -5,7 +5,7 @@ import AboutUsPage from './components/AboutUsPage';
 import ContactPage from './components/ContactPage';
 import Services from './components/Services';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import WheatPage from './components/WheatPage';
+import WheatPage from './components/Wheatpage';
 import RicePage from './components/RicePage';
 import CornPage from './components/CornPage';
 import CarrotPage from './components/CarrotPage';

@@ -1,54 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Navbar } from './components/navabr'
-import HomePage from './components/homepage'
-import Aboutuspage from './components/aboutuspage'
-import Contactpage from './components/contactpage'
-import Services from './components/services'
-import footer from './components/fotter'
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Wheatpage from './components/Wheatpage'
-import Ricepage from './components/Ricepage'
-import Cornpage from './components/Cornpage'
-import Carrotpage from './components/Carrotpage'
-import Cottonpage from './components/Cottonpage'
-import Milletspage from './components/Milletspage'
-import Soyapage from './components/Soyapage'
-import Sugarpage from './components/Sugarpage'
-import Groundnutpage from './components/Groundnutpage'
-import Applepage from './components/Apple'
-import Orangepage from './components/Orangepage'
-import Potatopage from './components/Potatopage'
+import { useState } from 'react';
+import './App.css';
+import HomePage from './components/HomePage';
+import AboutUsPage from './components/AboutUsPage';
+import ContactPage from './components/ContactPage';
+import Services from './components/Services';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import WheatPage from './components/WheatPage';
+import RicePage from './components/RicePage';
+import CornPage from './components/CornPage';
+import CarrotPage from './components/CarrotPage';
+import CottonPage from './components/CottonPage';
+import MilletsPage from './components/MilletsPage';
+import SoyaPage from './components/SoyaPage';
+import SugarPage from './components/SugarPage';
+import GroundnutPage from './components/GroundnutPage';
+import ApplePage from './components/ApplePage';
+import OrangePage from './components/OrangePage';
+import PotatoPage from './components/PotatoPage';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<Aboutuspage />} />
+          <Route path="/about" element={<AboutUsPage />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contactpage />} />
-          <Route path="/wheat" element={<Wheatpage/>} />
-          <Route path="/rice" element={<Ricepage></Ricepage>} />
-          <Route path="/corn" element={<Cornpage></Cornpage>} />
-          <Route path="/carrot" element={<Carrotpage></Carrotpage>} />
-          <Route path="/cotton" element={<Cottonpage></Cottonpage>} />
-          <Route path="/millets" element={<Milletspage></Milletspage>} />
-          <Route path="/soya" element={<Soyapage></Soyapage>} />
-          <Route path="/sugarcane" element={<Sugarpage></Sugarpage>} />
-          <Route path="/groundnut" element={<Groundnutpage></Groundnutpage>} />
-          <Route path="/apple" element={<Applepage></Applepage>} />
-          <Route path="/orange" element={<Orangepage></Orangepage>} />
-          <Route path="/potato" element={<Potatopage></Potatopage>} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/wheat" element={<WheatPage />} />
+          <Route path="/rice" element={<RicePage />} />
+          <Route path="/corn" element={<CornPage />} />
+          <Route path="/carrot" element={<CarrotPage />} />
+          <Route path="/cotton" element={<CottonPage />} />
+          <Route path="/millets" element={<MilletsPage />} />
+          <Route path="/soya" element={<SoyaPage />} />
+          <Route path="/sugarcane" element={<SugarPage />} />
+          <Route path="/groundnut" element={<GroundnutPage />} />
+          <Route path="/apple" element={<ApplePage />} />
+          <Route path="/orange" element={<OrangePage />} />
+          <Route path="/potato" element={<PotatoPage />} />
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
